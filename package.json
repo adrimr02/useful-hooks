@@ -1,0 +1,19 @@
+{
+  "name": "useful-hooks",
+  "version": "0.0.1",
+  "description": "React hook library. All written in TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrimr02/useful-hooks"
+  },
+  "author": "adrimr02",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.20",
+    "typescript": "^5.1.6"
+  }
+}
