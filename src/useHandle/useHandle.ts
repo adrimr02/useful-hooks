@@ -7,7 +7,7 @@ export function useHandle<TFieldValues extends FieldValues = FieldValues>({
   onError,
   initialValues,
 }: UseFormArgs<TFieldValues>): UseFormReturn<TFieldValues> {
-  const { values, setters } = useCombinedState(initialValues);
+  const [values, setters] = useCombinedState(initialValues);
 
   const [isLoading, setIsLoading] = React.useState(false);
   const [isError, setIsError] = React.useState(false);

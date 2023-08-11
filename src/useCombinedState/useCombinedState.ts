@@ -3,7 +3,7 @@ import { FieldValues, Setters, Values } from '../types';
 
 export function useCombinedState<TFieldValues extends FieldValues>(
   initialValues: TFieldValues
-): { values: Values<TFieldValues>; setters: Setters<TFieldValues> } {
+): [Values<TFieldValues>, Setters<TFieldValues>] {
   const [state, setState] = React.useState<TFieldValues>(initialValues);
 
   const setters = {} as {
@@ -11,8 +11,10 @@ export function useCombinedState<TFieldValues extends FieldValues>(
   };
 
   for (const key in initialValues) {
-    setters[key] = value => setState(s => ({ [key]: value, ...s }));
+    setters[key] = value => {
+      setState(s => ({ ...s, [key]: value }))
+    };
   }
 
-  return { values: state, setters };
+  return [state, setters];
 }
