@@ -20,4 +20,4 @@ export type UseFormReturn<TFieldValues extends FieldValues> = {
   setters: Setters<TFieldValues>;
 };
 
-export type FieldValues = [string, any][];
+export type FieldValues = Record<string, any>;
