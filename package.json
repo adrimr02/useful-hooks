@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
+    "lib",
     "dist"
   ],
   "engines": {
@@ -19,7 +20,7 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "name": "useful-hooks",
+  "name": "@adrimr02/useful-hooks",
   "author": "adrimr02",
   "module": "dist/useful-hooks.esm.js",
   "type": "module",
