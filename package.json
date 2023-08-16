@@ -13,6 +13,7 @@
     "node": ">=10"
   },
   "scripts": {
+    "start": "rimraf lib && tsup --watch",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings 0",
     "build:dev": "rimraf lib && tsup",
     "build": "rimraf dist && env NODE_ENV=production tsup",
