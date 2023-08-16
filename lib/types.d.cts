@@ -18,5 +18,9 @@ type UseFormReturn<TFieldValues extends FieldValues> = {
     setters: Setters<TFieldValues>;
 };
 type FieldValues = Record<string, any>;
+type Rect = {
+    width: number;
+    height: number;
+};
 
-export { FieldValues, HandleFn, Setters, UseFormArgs, UseFormReturn, Values };
+export { FieldValues, HandleFn, Rect, Setters, UseFormArgs, UseFormReturn, Values };

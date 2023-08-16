@@ -1,9 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-
-type Rect = {
-  width: number;
-  height: number;
-};
+import { Rect } from '../types';
 
 export function useElementSize<T extends HTMLElement = HTMLDivElement>() {
   const ref = useRef<T>(null);

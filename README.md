@@ -23,4 +23,5 @@
 - useElementSize
 - useCopyToClipboard
 - useCombinedState
+- useMousePosition
 - useHandle

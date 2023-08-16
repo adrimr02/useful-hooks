@@ -1,8 +1,8 @@
-import { useHandle } from '../../.'
+import { useForm } from '../../.'
 
 const App = () => {
 
-  const { handle, isError, isLoading, setters, values } = useHandle({
+  const { handle, isError, isLoading, setters, values } = useForm({
     initialValues: {
       name: 'John',
       age: 20,

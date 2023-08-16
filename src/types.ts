@@ -21,3 +21,8 @@ export type UseFormReturn<TFieldValues extends FieldValues> = {
 };
 
 export type FieldValues = Record<string, any>;
+
+export type Rect = {
+  width: number;
+  height: number;
+};
