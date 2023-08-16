@@ -14,7 +14,7 @@
   },
   "scripts": {
     "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings 0",
-    "build:dev": "rimraf lib && tsup --watch",
+    "build:dev": "rimraf lib && tsup",
     "build": "rimraf dist && env NODE_ENV=production tsup",
     "clean": "git clean -xdf dist node_modules",
     "typecheck": "tsc --noEmit"
